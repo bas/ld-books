@@ -34,6 +34,6 @@ Here is a screenshot with the feature flags enabled:
 
 <img width="1306" alt="Screen Shot 2022-07-01 at 14 37 20" src="https://user-images.githubusercontent.com/1982588/176895918-43ac5b80-af8f-40b9-b7ce-a7caa6486a95.png">
 
-It shows a [different header text](https://github.com/bas/ld-books/pull/1/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR66), the [text input](https://github.com/bas/ld-books/pull/2/files#diff-5e5602b99ccd8618a8fd660de36670dea6de9028a679e5169069c10e0e94c8dcR38) in the cart, [the banner](https://github.com/bas/ld-books/pull/2/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR70) and the [text and icon variation](https://github.com/bas/ld-books/pull/3/files) of the Add to art button.
+It shows a [different header text](https://github.com/bas/ld-books/pull/1/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR66), the [text input](https://github.com/bas/ld-books/pull/2/files#diff-5e5602b99ccd8618a8fd660de36670dea6de9028a679e5169069c10e0e94c8dcR38) in the cart, [the banner](https://github.com/bas/ld-books/pull/2/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR70) and the [text and icon variation](https://github.com/bas/ld-books/pull/3/files) of the Add to cart button.
 
 
