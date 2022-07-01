@@ -8,8 +8,10 @@ import {
 } from "@primer/react";
 import BookList from "../components/book-list";
 import Cart from "../components/cart";
+import { useFlags } from "launchdarkly-react-client-sdk";
 
 function App() {
+  const { pageHeader } = useFlags();
   const allBooks = [
     {
       title: "Scrum: The Art of Doing Twice the Work in Half the Time",
@@ -61,7 +63,7 @@ function App() {
                 <Header.Link href="#">About</Header.Link>
               </Header.Item>
             </Header>
-            <Pagehead sx={{ fontSize: 3, mb: 1 }}>Our staff picks</Pagehead>
+            <Pagehead sx={{ fontSize: 3, mb: 1 }}>{pageHeader}</Pagehead>
           </PageLayout.Header>
           <PageLayout.Pane>
             <Box height={640}>
