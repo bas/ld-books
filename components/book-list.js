@@ -1,6 +1,6 @@
-import { Box, Text, IconButton } from "@primer/react";
-import { GiftIcon } from "@primer/octicons-react";
+import { Box, Text } from "@primer/react";
 import Image from "next/image";
+import CartButton from "./cart-button";
 
 function BookList({allBooks}) {
   return (
@@ -31,7 +31,7 @@ function BookList({allBooks}) {
             </Box>
           </Box>
           <Box>            
-            <IconButton aria-label="Search" icon={GiftIcon} />
+            <CartButton />
           </Box>
         </Box>
       ))}

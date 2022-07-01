@@ -21,7 +21,7 @@ function Cart() {
           </Text>
         </Box>
         <Box p={1}>
-          <FormControl>
+          <FormControl id="quantity-select">
             <FormControl.Label>Quantity</FormControl.Label>
             <Select>
               <Select.Option value="1">1</Select.Option>
