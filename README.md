@@ -2,6 +2,14 @@
 
 This is a simple single page web app developed using nextjs. It shows a list of staff picked books.
 
+## Contents 
+
+- [Installation](#installation)
+- [Flags implemented](#flags-implenented)
+- [Flag configuration](#flag-configuration)
+
+## Installation
+
 To enable featue flagging add the Client-side ID:
 
 - Clone this repository and `cd` into the project directory
@@ -22,6 +30,8 @@ You should see a page similar to this:
 
 <img width="1314" alt="Screen Shot 2022-07-01 at 14 20 47" src="https://user-images.githubusercontent.com/1982588/176893295-7639dcde-a700-4edf-946b-24e19f1fe213.png">
 
+## Flags implenented
+
 There are four feature flags configured:
 
 <img width="1372" alt="Screen Shot 2022-07-01 at 14 24 52" src="https://user-images.githubusercontent.com/1982588/176893940-fde0798a-ba8d-446e-a40e-f525c877a6a3.png">
@@ -36,4 +46,40 @@ Here is a screenshot with the feature flags enabled:
 
 It shows a [different header text](https://github.com/bas/ld-books/pull/1/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR66), the [text input](https://github.com/bas/ld-books/pull/2/files#diff-5e5602b99ccd8618a8fd660de36670dea6de9028a679e5169069c10e0e94c8dcR38) in the cart, [the banner](https://github.com/bas/ld-books/pull/2/files#diff-7c97c1ad17c63f34774324965f81661cea32f533a65c39ab03576069972e4d0eR70) and the [text and icon variation](https://github.com/bas/ld-books/pull/3/files) of the Add to cart button.
 
+## Flag configuration
 
+To recreate the flags follow the instrucitons below:
+
+### pageHeader
+
+- Name: `pageHeader`
+- Type: String
+- Variation 1: Our staff picks
+- Variation 2: Our staff favorites
+
+### applyCoupon
+
+- Name: `applyCoupon`
+- Type: Bookean
+- Variation 1: true, show coupon field
+- Variation 2: false, hide coupon field
+
+### showCampaignBanner
+
+- Name: `showCampaignBanner`
+- Type: Boolean
+- Variation 1: true, show banner
+- Variation 2: false, hide banner
+
+The `showCampaignBanner` should have `applyCoupon` as prerequisite, but that feature was disabled.
+
+### cartButton
+
+- Name `cartButton`
+- Type: String
+- Variation 1: Button
+- Variation 2: IconButton
+- Variation 3: IconOnlyButton
+- Variation 4: PrimaryButton
+
+Add percentage rollout as default rule with an even distribution of 25% for each of the four buttons.
