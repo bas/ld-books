@@ -36,9 +36,9 @@ There are four feature flags configured:
 
 <img width="1372" alt="Screen Shot 2022-07-01 at 14 24 52" src="https://user-images.githubusercontent.com/1982588/176893940-fde0798a-ba8d-446e-a40e-f525c877a6a3.png">
 
-- The initial configuration and the `pageHeader` flag were developed in https://github.com/bas/ld-books/pull/1/files. It uses two string variations to show different header texts for the staff picks page.
-- The `applyCoupon` and `showCampaignBanner` flags were developed in https://github.com/bas/ld-books/pull/2/files. It adds a text input field to the cart to allow the user to apply a coupon and if that flag returns true and `showCampaignBanner` returns true it also shows a campaign banner to promote a coupon code. 
-- The `cartButton` flag was developed in https://github.com/bas/ld-books/pull/3/files. It uses four string variations for different buttons to test if different types of buttons return a higher conversion rate.
+- The initial configuration and the `pageHeader` flag were added in https://github.com/bas/ld-books/pull/1/files. It uses two string variations to show different header texts for the staff picks page.
+- The `applyCoupon` and `showCampaignBanner` flags were added in https://github.com/bas/ld-books/pull/2/files. It adds a text input field to the cart to allow the user to apply a coupon and if that flag returns true and `showCampaignBanner` returns true it also shows a campaign banner to promote a coupon code. 
+- The `cartButton` flag was added in https://github.com/bas/ld-books/pull/3/files. It uses four string variations for different buttons to test if different types of buttons return a higher conversion rate.
 
 Here is a screenshot with the feature flags enabled:
 
