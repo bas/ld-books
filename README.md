@@ -50,7 +50,7 @@ It shows a [different header text](https://github.com/bas/ld-books/pull/1/files#
 
 For the initial configuration of the [React Web SDK](https://docs.launchdarkly.com/sdk/client-side/react/react-web) I followed [this tutorial](https://www.youtube.com/watch?v=CacXKjYURdo) delivered by Cody De Arkland.
 
-To recreate the flags follow the instrucitons below:
+To recreate the flags follow the instructions below:
 
 ### pageHeader
 
