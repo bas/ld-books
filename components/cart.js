@@ -1,6 +1,8 @@
 import { Box, Text, FormControl, Select, TextInput } from "@primer/react";
+import { useFlags } from "launchdarkly-react-client-sdk";
 
 function Cart() {
+  const { applyCoupon } = useFlags();
   return (
     <Box display="grid" gridTemplateColumns="1fr">
       <Box>
@@ -33,7 +35,15 @@ function Cart() {
           <Text sx={{ fontSize: 1, mb: 1 }}>€15.00</Text>
         </Box>
       </Box>
-     
+      { /* Show the apply coupon text field if applyCoupon is true */ }
+      {applyCoupon && (
+        <Box p={3}>
+          <FormControl>
+            <FormControl.Label>Enter Coupon</FormControl.Label>
+            <TextInput />
+          </FormControl>
+        </Box>
+      )}
     </Box>
   );
 }
