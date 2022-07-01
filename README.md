@@ -5,7 +5,7 @@ This is a simple single page web app developed using nextjs. It shows a list of 
 ## Contents 
 
 - [Installation](#installation)
-- [Flags implemented](#flags-implenented)
+- [Flags implemented](#flags-implemented)
 - [Flag configuration](#flag-configuration)
 
 ## Installation
@@ -30,7 +30,7 @@ You should see a page similar to this:
 
 <img width="1314" alt="Screen Shot 2022-07-01 at 14 20 47" src="https://user-images.githubusercontent.com/1982588/176893295-7639dcde-a700-4edf-946b-24e19f1fe213.png">
 
-## Flags implenented
+## Flags implemented
 
 There are four feature flags configured:
 
