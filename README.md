@@ -1,6 +1,6 @@
 # ld-books
 
-This is a simple single page web app developed using nextjs.
+This is a simple single page web app developed using nextjs. It shows a list of staff picked books.
 
 To enable featue flagging add the Client-side ID:
 
