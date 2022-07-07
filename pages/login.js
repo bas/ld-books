@@ -15,7 +15,7 @@ import SiteHeader from "../components/header";
 function Login() {
   const { confetti } = useFlags();
   const [user, setUser] = useState("");
-  let ldClient = useLDClient();
+  const ldClient = useLDClient();
 
   async function changeUser() {
     const newUser = {
