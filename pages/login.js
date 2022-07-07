@@ -6,6 +6,7 @@ import {
   BaseStyles,
   PageLayout,
   Pagehead,
+  Text,
 } from "@primer/react";
 import { useLDClient, useFlags } from "launchdarkly-react-client-sdk";
 import { useEffect, useState } from "react";
@@ -23,7 +24,7 @@ function Login() {
     };
     /* not sure why yet, but on first load ldClient is not yet initialized */
     if (ldClient) {
-      await ldClient.identify(newUser, null, () => {
+      ldClient.identify(newUser, null, () => {
         console.log("New user's flags available");
       });
 
@@ -51,11 +52,9 @@ function Login() {
           <PageLayout.Header>
             <SiteHeader />
             <Pagehead sx={{ fontSize: 3, mb: 1 }}>
-            {user ? (
-              `You are signed in as ${ldClient.getUser().key}.`
-            ) : (
-              `Please sign in.`
-            )}
+              {user
+                ? `You are signed in as ${ldClient.getUser().key}.`
+                : `Please sign in.`}
             </Pagehead>
           </PageLayout.Header>
           <PageLayout.Content>
@@ -72,6 +71,7 @@ function Login() {
                 </Box>
               </Box>
             </form>
+            <Text as="p">If you sign in as 'bas' we have a nice surprise for you.</Text>
           </PageLayout.Content>
         </PageLayout>
       </BaseStyles>
