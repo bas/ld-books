@@ -9,6 +9,9 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-export default withLDProvider({ clientSideID: process.env.NEXT_PUBLIC_LD_CLIENT_SIDE_ID })(
-  App
-);
+export default withLDProvider({
+  clientSideID: process.env.NEXT_PUBLIC_LD_CLIENT_SIDE_ID,
+  options: {
+    bootstrap: "localStorage",
+  },
+})(App);
