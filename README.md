@@ -85,3 +85,5 @@ The `showCampaignBanner` should have `applyCoupon` as prerequisite, but that fea
 - Variation 4: PrimaryButton
 
 Add percentage rollout as default rule with an even distribution of 25% for each of the four buttons.
+
+Pull request https://github.com/bas/ld-books/pull/4 was added as a test to target an individual user.
