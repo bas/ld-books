@@ -58,7 +58,7 @@ function App() {
             {/* Show the text returned by the pageHeader feature flag */}
             <Pagehead sx={{ fontSize: 3, mb: 1 }}>{pageHeader}</Pagehead>
             {/* Only show the banner if applycoupon and showCampaignBanner are both true */}
-            {showCampaignBanner && applyCoupon && <PromoBanner discount={10} />}
+            {showCampaignBanner && <PromoBanner discount={10} />}
           </PageLayout.Header>
           <PageLayout.Pane>
             <Box height={640}>
