@@ -66,8 +66,13 @@ function App() {
             </Header>
             { /* Show the text returned by the pageHeader feature flag */ }
             <Pagehead sx={{ fontSize: 3, mb: 1 }}>{pageHeader}</Pagehead>
+<<<<<<< Updated upstream
             { /* Only show the banner if applycoupon and showCampaignBanner are both true */ }
             {showCampaignBanner && applyCoupon && <PromoBanner discount={10}/>}
+=======
+            {/* Only show the banner if applycoupon and showCampaignBanner are both true */}
+            {showCampaignBanner && <PromoBanner discount={10} />}
+>>>>>>> Stashed changes
           </PageLayout.Header>
           <PageLayout.Pane>
             <Box height={640}>

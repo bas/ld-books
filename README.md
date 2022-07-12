@@ -69,11 +69,10 @@ To recreate the flags follow the instructions below:
 ### showCampaignBanner
 
 - Name: `showCampaignBanner`
+- Add `applyCoupon` as a prerequisite.
 - Type: Boolean
 - Variation 1: true, show banner
 - Variation 2: false, hide banner
-
-The `showCampaignBanner` should have `applyCoupon` as prerequisite, but that feature was disabled.
 
 ### cartButton
 
