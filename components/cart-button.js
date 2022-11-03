@@ -7,17 +7,21 @@ function CartButton() {
   console.log(`The current button style is: ${cartButton}`);
 
   /* show a button based on the variant returend from the feature flag */
-  switch (cartButton) {
-    case "Button":
-      return <Button>Add to Cart</Button>;
-    case "IconButton":
-      return <Button trailingIcon={GiftIcon}>Add to Cart</Button>;
-    case "PrimaryButton":
-      return <Button variant="primary">Add to Cart</Button>;
-    case "IconOnlyButton":
-      return <IconButton icon={GiftIcon} />;
-    default:
-      return <IconButton icon={GiftIcon} />
+  if (cartButton) {
+    switch (cartButton) {
+      case "Button":
+        return <Button>Add to Cart</Button>;
+      case "IconButton":
+        return <Button trailingIcon={GiftIcon}>Add to Cart</Button>;
+      case "PrimaryButton":
+        return <Button variant="primary">Add to Cart</Button>;
+      case "IconOnlyButton":
+        return <IconButton icon={GiftIcon} />;
+      default:
+        return <IconButton icon={GiftIcon} />;
+    }
+  } else {
+    return <Button>Add to Cart</Button>;
   }
 }
 
