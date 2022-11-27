@@ -2,17 +2,18 @@ import {
   BaseStyles,
   Box,
   PageLayout,
-  Text,
-  Header,
   Pagehead,
 } from "@primer/react";
+import { useEffect } from "react";
 import BookList from "../components/book-list";
 import Cart from "../components/cart";
 import PromoBanner from "../components/promo-banner";
 import { useFlags } from "launchdarkly-react-client-sdk";
+import SiteHeader from "../components/header";
 
 function App() {
   const { pageHeader, showCampaignBanner, applyCoupon } = useFlags();
+
   const allBooks = [
     {
       title: "Scrum: The Art of Doing Twice the Work in Half the Time",
@@ -53,18 +54,8 @@ function App() {
       <BaseStyles>
         <PageLayout>
           <PageLayout.Header>
-            <Header>
-              <Header.Item>
-                <Header.Link href="#">Home</Header.Link>
-              </Header.Item>
-              <Header.Item>
-                <Header.Link href="#">Staff picks</Header.Link>
-              </Header.Item>
-              <Header.Item>
-                <Header.Link href="#">About</Header.Link>
-              </Header.Item>
-            </Header>
-            { /* Show the text returned by the pageHeader feature flag */ }
+            <SiteHeader />
+            {/* Show the text returned by the pageHeader feature flag */}
             <Pagehead sx={{ fontSize: 3, mb: 1 }}>{pageHeader}</Pagehead>
             {/* Only show the banner if applycoupon and showCampaignBanner are both true */}
             {showCampaignBanner && <PromoBanner couponCode="AUTUMN22" discount={10} />}
